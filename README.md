@@ -23,11 +23,11 @@ Lo mismo realizamos para Escritura (Write.java), creamos las clases que implemen
 
 ## Factory Method
 
-Ahora creamos la clase Factory Method para ambas interfaces, ReadFactory.java y WriteFactory.java. Estas clases tienen un comportamiento especial pues retornan una clase instaciada a partir de un parametro de tipo String que nos permite determinar que tipo de clase retornar. Lo hacemos a través del metodo TypeWrie() para WriteFactory.java y TypeRead para ReadFactory.java.
+Ahora usamos el patrón Factory Method para ambas interfaces, ReadFactory.java y WriteFactory.java. Estas clases tienen un comportamiento especial pues retornan una clase instaciada a partir de un parametro de tipo String que nos permite determinar que tipo de clase retornar. Lo hacemos a través del metodo TypeWrie() para WriteFactory.java y TypeRead para ReadFactory.java.
 
 ## Brigde 
 
-Creamos la clase Copier.java que implementa un puente para interactuar entre los Factories ReadFactory.java y WriteFactory.java. Desde el Client.java podemos ver el ejemplo que con dos lineas de programación podemos implementar la solución requerida.
+Nos basamos en el patron Brigde para crear la clase Copier.java que implementa un puente para interactuar entre las clases  ReadFactory.java y WriteFactory.java. Desde el Client.java podemos ver el ejemplo que con dos lineas de programación podemos implementar la solución requerida.
 
 ## Conclusiones
 
